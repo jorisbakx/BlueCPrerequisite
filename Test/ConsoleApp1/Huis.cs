@@ -6,7 +6,35 @@ namespace ConsoleApp1
 {
     class Huis
     {
-        public int Ramen = 2;
-        public string Naam = "Weltevreden";
+        // velden
+        private int AantalRamen;
+        private string Naam;
+        private bool Dak;
+
+        private bool SRE1b;
+
+        public Huis( string naam )
+        {
+            this.Naam = naam;
+            this.AantalRamen = 3;
+            this.Dak = true;
+
+            SRE1b = false;
+        }
+
+        public int GeefAantalRamen()
+        {
+            return this.AantalRamen;
+        }
+
+        public bool HeeftSRE1b()
+        {
+            return this.SRE1b;
+        }
+
+        public bool HeeftDak()
+        {
+            return this.Dak;
+        }
     }
 }
