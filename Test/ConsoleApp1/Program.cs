@@ -6,23 +6,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+			StudentJB test1 = new StudentJB("Joris Bakx", 47.5);
+			Console.WriteLine(test1.GetName());
+			Console.WriteLine(test1.GetStudiepunten());
 
-            Huis mijnHuis = new Huis("Zeldenrust", 2);
-            Huis deburen = new Huis("Altijd lawaai", 1);
-            
-            // Dit gaat over mijn huis
-            Console.WriteLine(mijnHuis.GeefAantalRamen());
-            Console.WriteLine( mijnHuis.GeefWoonindicatie());
-
-            // dit gaat over de buurtjes
-            Console.WriteLine(deburen.GeefAantalDakgoten());
-
-
-            string name = Console.ReadLine();
-            
-
-            
-            Console.Read();
+			Console.Read();
         }
     }
 }
