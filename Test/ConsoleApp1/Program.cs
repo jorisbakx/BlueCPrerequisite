@@ -6,13 +6,22 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter your name..");
+
+            Huis mijnHuis = new Huis("Zeldenrust", 2);
+            Huis deburen = new Huis("Altijd lawaai", 1);
+            
+            // Dit gaat over mijn huis
+            Console.WriteLine(mijnHuis.GeefAantalRamen());
+            Console.WriteLine( mijnHuis.GeefWoonindicatie());
+
+            // dit gaat over de buurtjes
+            Console.WriteLine(deburen.GeefAantalDakgoten());
+
+
             string name = Console.ReadLine();
-            string approved = "approved";
+            
 
-            string gonogo = $"System is capable of running .NET Core 2.0. {name} joining BlueJ is {approved}, as of {DateTime.Now.ToLocalTime()}!";
-
-            Console.WriteLine(gonogo);
+            
             Console.Read();
         }
     }
